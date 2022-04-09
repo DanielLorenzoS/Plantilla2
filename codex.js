@@ -195,3 +195,57 @@ img2.addEventListener('mousedown', () => {
     titleCakeRes.innerHTML = `${title2[counter]}`
     changeImage(`${cakes[counter]}`, 'pancake1');
 })
+
+function initMap() {
+  const polanco = { lat: 19.433797973738496, lng: -99.19090478692605 };
+  const chicago = new google.maps.LatLng(19.433797973738496, -99.19090478692605);
+  let map = new google.maps.Map(document.querySelector('.maps'), {
+    center: chicago,
+    zoom: 18,
+  });
+  let mapa = new google.maps.Map(document.querySelector('.mapas'), {
+    center: chicago,
+    zoom: 18,
+  });
+
+  const marker = new google.maps.Marker({
+    position: polanco,
+    map: map,
+  });
+}
+
+const TILE_SIZE = 256;
+
+function project(latLng) {
+  let siny = Math.sin((latLng.lat() * Math.PI) / 180);
+  siny = Math.min(Math.max(siny, -0.9999), 0.9999);
+  return new google.maps.Point(
+    TILE_SIZE * (0.5 + latLng.lng() / 360),
+    TILE_SIZE * (0.5 - Math.log((1 + siny) / (1 - siny)) / (4 * Math.PI))
+  );
+}
+
+// function inMap() {
+//   let cdmx = { lat: 19.433797973738496, lng: -99.19090478692605 };
+//   let cdmx = new google.maps.LatLng(19.433797973738496, -99.19090478692605);
+//   let mapa = new google.maps.Map(document.getElementById("mapa"), {
+//     center: chicago,
+//     zoom: 18,
+//   });
+
+//   const marker = new google.maps.Marker({
+//     position: cdmx,
+//     map: mapa,
+//   });
+// }
+
+// let TILE_SIZE_ = 256;
+
+// function projecto(latLng) {
+//   let sinyy = Math.sin((latLng.lat() * Math.PI) / 180);
+//   sinyy = Math.min(Math.max(sinyy, -0.9999), 0.9999);
+//   return new google.maps.Point(
+//     TILE_SIZE_ * (0.5 + latLng.lng() / 360),
+//     TILE_SIZE_ * (0.5 - Math.log((1 + siny) / (1 - siny)) / (4 * Math.PI))
+//   );
+// }
