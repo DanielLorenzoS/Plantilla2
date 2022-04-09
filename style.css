@@ -92,7 +92,7 @@ h3 span {
     	width: 70%;
     }
     to {
-    	width:10%
+    	width: 10%
     }
 }
 .cont-img {
@@ -281,6 +281,7 @@ h2 {
 	display: none;
 }
 .dataF {
+	height: 30vh;
 	color: #2e1200;
 	text-align: center;
 	border: 8px double rgb(41, 22, 0);
@@ -294,8 +295,11 @@ h2 {
 .dataF i {
 	font-size: 30px;
 }
-.maps {
+.mapas {
 	height: 300px;
+	border: 4px double #381601;
+	margin: 40px 20px;
+	border-radius: 6px;
 }
 .form_section {
 	margin-top: 20px;
