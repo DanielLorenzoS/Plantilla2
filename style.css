@@ -190,6 +190,9 @@ h3 span {
     max-height: 100px;
     opacity: .7;
 }
+.left {
+ transform: rotate(180deg);	
+}	
 .left:hover,.right:hover,.left2:hover,.right2:hover{
     opacity: .6;
 }
