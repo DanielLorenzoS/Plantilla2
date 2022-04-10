@@ -185,10 +185,11 @@ h3 span {
     border: 3px solid #4b1d01;
 }
 .left,.right,.left2,.right2 {
-    margin: 110px 0;
+    margin: 90px 0;
     max-width: 30px;
     max-height: 30px;
     opacity: .7;
+    cursor: pointer;
 }
 .left, .left2 {
  transform: rotate(180deg);	
