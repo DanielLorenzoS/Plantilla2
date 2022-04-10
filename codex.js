@@ -123,7 +123,7 @@ let pivote = false;
 
 btnMenu.addEventListener('click', () => {
     if (pivote == false){
-        float.style.display = 'block';  
+        float.style.display = 'flex';  
         float.setAttribute('class','show');
         btnMenu.setAttribute('class','turn');
         pivote = true;
