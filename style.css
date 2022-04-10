@@ -186,11 +186,11 @@ h3 span {
 }
 .left,.right,.left2,.right2 {
     margin: 80px 0;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 90px;
+    max-height: 90px;
     opacity: .7;
 }
-.left {
+.left, .left2 {
  transform: rotate(180deg);	
 }	
 .left:hover,.right:hover,.left2:hover,.right2:hover{
