@@ -1,130 +1,198 @@
-@media only screen and (max-width: 900px) {
-  .services-section {
-    margin: 0 50px;
-  }
-  footer {
-    flex-direction: column;
-  }
-  #phone, #map, #form {
-    margin: 10px auto;
-    width: 50%;
-  }
+@media screen and (max-width: 927px ){
+	.cont-menu {
+		margin: 15px 0px;
+	}
 }
-@media only screen and (max-width: 630px) {
-  .services {
-    margin-top: 160px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 30px 60px;
-  }
-  .services-section {
-    margin: 0 150px;
-  }
-}
+@media screen and (max-width: 800px ){
+	.body {
+		background-color: #4b1d01;
+	}
+	.grid-cont {
+		display: none;
+		height: 100vh;
+	}
+	.initRes {
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 50px 1fr;
+	}
+	.btnMenu {
+		opacity: .93;
+		display: block;
+		background: #4b1d01;
+	}
+	.btnMenu img {
+		border-radius: 10px;
+		margin-top: 200px;
+		max-width: 45px;
+		max-height: 45px;
+	}
+	.turn {
+		animation: turn 1.2s forwards;
+	}
+	.turnAgain {
+		animation: turnAgain 1.2s forwards;
+	}
+	@keyframes turn {
+		from {
+			transform: rotate(0);
+		}to {
+			transform: rotate(180deg);
+		}
+	}
+	@keyframes turnAgain {
+		from {
+			transform: rotate(180deg);
+		}to {
+			transform: rotate(360deg);
+		}
+	}
+	.floatMenu {
+		display: none;
+		transition: 1s ease-out;
+	}
+	.show {
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 100vh;
+		width: 100%;
+		position: absolute;
+		padding: 10px;
+		background: #4b1d01;
+		animation: right .7s forwards;
+		opacity: .93;
+		z-index: 10;
 
-@media only screen and (max-width: 600px) {
-  .nav {
-    display: none;
-  }
-  #img {
-    margin-top: -150px;
-    max-width: 300px;
-    max-height: 300px;
-  }
-  .btn-menu {
-    display: inline-block;
-  }
-  .img-menu {
-    margin-right: -500px;
-    max-width: 60px;
-    max-height: 80px;
-    cursor: pointer;
-    transition: 1s ease-in-out;
-  }
-  .beggin {
-    height: 80vh;
-  }
-  .nav-res {
-    display: inline-block;
-    position: fixed;
-    margin: 100px 50px 0 50px;
-    left: 1000px;
-    right: -1000px;
-
-    border: 2px solid darkblue;
-    border-radius: 8px;
-    text-align: center;
-    background: #002570;
-    transition: 1s ease-in-out;
-    z-index: 10;
-  }
-  .inicio, .servicio, .contacto { 
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Poiret One', cursive; 
-  }
+	}
+	.notShow {
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 100vh;
+		width: 100%;
+		position: absolute;
+		padding: 10px;
+		background: #4b1d01;
+		opacity: .93;
+		animation: left 1s forwards;
+		z-index: 10;
+	}
+	@keyframes right {
+		from {
+			margin-left: -200px;
+		}to {
+			margin-left: 50px;
+		}
+	}
+	@keyframes left {
+		from {
+			margin-left: 100px;
+		}to {
+			margin-left: -500px;
+		}
+	}
+		#move h2 {
+		color: rgb(177, 111, 37);
+		margin-right: 100px;
+		margin-bottom: 40px;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.inRes {
+		margin-top: -260px;
+		text-align: center;
+		color: #381601;
+		font-size: 20px;
+		overflow: hidden;
+	}
+	.cont_portafolio_r {
+		margin-top: 300px;
+	}
+	.cont_portafolio_r h2, h3 {
+		margin: 10px 15px;
+	}.cont_portafolio_r h2 {
+		text-decoration-line: underline;
+	}
+	.cont-img-r {
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 350px;
+		height: 600px;
+		opacity: .85;
+	}
+	.cont-img-r img {
+		max-width: 500px;
+		max-height: 500px;
+		position: relative;
+		top: -30px;
+		left: -50px;		
+	}
+	.hisRes {
+		display: none;
+		height: 100vh;
+		text-align: center;
+		padding: 10px;
+		overflow: hidden;
+		color: #381601;
+	}
+	.hisRes h2 {
+		text-decoration-line: underline;
+	}
+	.imgRes img {
+		margin: 10px auto;
+		margin-left: -80px;
+		width: 400px;
+		height: 400px;
+	}
+	.menuRes {
+		display: none;
+		height: 100vh;
+		text-align: center;
+		padding: 10px;
+		color: #381601;
+	}
+	.menuRes h1 {
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}
+	.left,.right {
+		margin: 0;
+	}
+	.galery img,.galery img {
+		width: 30px;
+		height: 30px;
+	}
+	.package {
+		margin: 10px 150px;
+		border-bottom: 3px dotted #381601;
+	}
+	.contactRes {
+		display: none;
+		height: 100vh;
+		text-align: center;
+		padding: 10px;
+	}
+	.dataF {
+		margin: 10px;
+	}
+	.info {
+		display: none;
+	}
+	
 }
-
-@media only screen and (max-width: 500px) {
-  .services-section {
-    margin: 10px 15px;
-  }
-  .services {
-    margin-top: 160px;
-    display: flex;
-    flex-direction: column;
-  } 
-  #s1, #s2, #s3, #s4 {
-    padding: 5px;
-    height: 20vh;
-    width: 80%; 
-  }
-  .more {
-    align-self: center;
-    text-decoration-line: underline;
-    cursor: pointer;
-  }
+@media screen and (max-width: 600px ){
+	.package {
+		margin: 10px 0;
+	}
 }
-
-@media only screen and (max-width: 400px) {
-  #phone, #map, #form {
-    margin: 10px auto;
-    height: 200px;
-    width: 75%;
-  }  
-}
-@media only screen and (max-width: 350px) {
-  .title {
-    font-size: 25px;
-  }
-  .img-menu {
-    margin-right: -500px;
-    max-width: 50px;
-    max-height: 70px;
-  }
-  .beggin {
-    height: 40vh;
-  }
-  #img {
-    margin-top: 100px;
-  }
-  .inicio, .servicio, .contacto {
-    font-size: 25px;
-  }
-}
-@media only screen and (max-width: 310px) {
-  #phone a {
-    font-size: 17px;
-  } 
-  #form input, #form select {
-    font-size: 10px;
-    margin: 10px 25px;
-  }
-  #form input[type=submit] {
-    margin: 10px auto;
-  }
-  .aviso {
-    font-size: 12px;
-  }
+@media screen and (max-width: 440px ){
+	.dataF {
+		display: none;
+	}
+	.info {
+		display: block;
+		color: #381601;
+		border: 4px double #381601;
+		margin: 40px 20px;
+		border-radius: 6px;
+	}
+	
 }
