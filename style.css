@@ -186,8 +186,8 @@ h3 span {
 }
 .left,.right,.left2,.right2 {
     margin: 90px 0;
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 40px;
+    max-height: 40px;
     opacity: .7;
     cursor: pointer;
 }
